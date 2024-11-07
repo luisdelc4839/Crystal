@@ -5,21 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crystal - Login</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="https://i.postimg.cc/g098F5MV/image.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   </head>
   <body>
-    <div id="crystal-container" style="width: 100%; height: 150px;"></div>
+    <body>
+      <nav class="navbar">
+        <div class="nav-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-svg">
+            https://i.postimg.cc/g098F5MV/image.png
+          </svg>
+          <a href="#" class="logo">
+            <img src="https://i.postimg.cc/g098F5MV/image.png" alt="Crystal Logo" class="logo-img">
+          </a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>      
+    
+      <div id="crystal-container" style="width: 100%; height: 150px;"></div>
+      <!-- Rest of your content -->
+    </body>
+    
     <div class="container">
+      <div class="content-wrapper">
+        <div class="form-wrapper">
       <h1 class="custom-heading">Welcome to Crystal</h1>
-      <div class="form-wrapper">
-        <form class="auth-form">
-          <input type="email" placeholder="Email" required>
-          <input type="password" placeholder="Password" required>
-          <button type="submit">Log In</button>
-          <p class="switch">Don't have an account? <a href="#">Sign Up</a></p>
-        </form>
+          <form class="auth-form">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+            <p class="switch">Don't have an account? <a href="#">Sign Up</a></p>
+          </form>
+        </div>
+        <div class="side-text">
+          <p>Manage your tasks, set reminders, and take notes <span class="highlight">seamlessly</span>. with Crystal. Experience simplicity and productivity like never before.</p>
+        </div>
       </div>
     </div>
-    <script src="/js/main.js"></script> <!-- Link your main.js file -->
+    <script src="/js/main.js"></script>
   </body>
 </html>
