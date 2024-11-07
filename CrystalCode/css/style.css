@@ -14,27 +14,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(3px 3px at 10% 20%, rgba(255, 240, 250, 0.9), transparent),
-              radial-gradient(4px 4px at 30% 40%, rgba(255, 230, 245, 0.9), transparent),
-              radial-gradient(3px 3px at 50% 70%, rgba(255, 250, 255, 0.7), transparent),
-              radial-gradient(5px 5px at 80% 60%, rgba(255, 220, 240, 0.9), transparent),
-              radial-gradient(4px 4px at 20% 80%, rgba(255, 240, 250, 0.8), transparent),
-              radial-gradient(3px 3px at 15% 30%, rgba(255, 230, 245, 0.9), transparent),
-              radial-gradient(2px 2px at 40% 15%, rgba(255, 250, 255, 0.9), transparent),
-              radial-gradient(3px 3px at 70% 90%, rgba(255, 240, 250, 0.7), transparent),
-              radial-gradient(3px 3px at 60% 40%, rgba(255, 230, 245, 0.9), transparent),
-              radial-gradient(2px 2px at 25% 70%, rgba(255, 250, 255, 0.8), transparent);
-  animation: sparkle 3s infinite alternate ease-in-out;
-  pointer-events: none;
-  z-index: 1;
-}
 
 .custom-heading {
   font-size: 2rem;
