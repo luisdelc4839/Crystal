@@ -1,0 +1,160 @@
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background: radial-gradient(circle, rgb(30, 0, 15) 0%, rgba(15, 0, 10, 1) 80%);
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(3px 3px at 10% 20%, rgba(255, 240, 250, 0.9), transparent),
+              radial-gradient(4px 4px at 30% 40%, rgba(255, 230, 245, 0.9), transparent),
+              radial-gradient(3px 3px at 50% 70%, rgba(255, 250, 255, 0.7), transparent),
+              radial-gradient(5px 5px at 80% 60%, rgba(255, 220, 240, 0.9), transparent),
+              radial-gradient(4px 4px at 20% 80%, rgba(255, 240, 250, 0.8), transparent),
+              radial-gradient(3px 3px at 15% 30%, rgba(255, 230, 245, 0.9), transparent),
+              radial-gradient(2px 2px at 40% 15%, rgba(255, 250, 255, 0.9), transparent),
+              radial-gradient(3px 3px at 70% 90%, rgba(255, 240, 250, 0.7), transparent),
+              radial-gradient(3px 3px at 60% 40%, rgba(255, 230, 245, 0.9), transparent),
+              radial-gradient(2px 2px at 25% 70%, rgba(255, 250, 255, 0.8), transparent);
+  animation: sparkle 3s infinite alternate ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.custom-heading {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+
+.form-wrapper {
+  background: rgba(54, 0, 30, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  background: #4a004e;
+  border: none;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.auth-form button {
+  background: #ff007f;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-form button:hover {
+  background: #e60073;
+}
+
+.switch {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.switch a {
+  color: #ff007f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+#crystal-container {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding-bottom: -100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 300px);
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  .custom-heading {
+    font-size: 2.5rem;
+  }
+
+  .form-wrapper {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  #crystal-container {
+    height: 120px;
+  }
+
+  .container {
+    min-height: calc(100vh - 220px);
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-heading {
+    font-size: 2rem;
+  }
+
+  .form-wrapper {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .auth-form input {
+    padding: 0.5rem;
+  }
+
+  .auth-form button {
+    padding: 0.5rem;
+  }
+
+  #crystal-container {
+    height: 100px;
+  }
+}
